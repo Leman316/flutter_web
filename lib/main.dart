@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/Landing_Page/landing_page.dart';
 import 'package:flutter_web/Navbar/Desktop_navbar.dart';
 import 'Navbar/nav_bar.dart';
 
@@ -36,10 +37,13 @@ class MyHomePage extends StatelessWidget {
                   Color.fromRGBO(36, 11, 54, 1)
                 ]),
           ),
-          child: Column(
-            children: <Widget>[
-              NavBar(),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                NavBar(),
+                LandingPage(),
+              ],
+            ),
           )),
     );
   }
