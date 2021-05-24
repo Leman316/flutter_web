@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/Navbar/navbar_logo.dart';
 
 class DesktopNavBar extends StatelessWidget {
   @override
@@ -10,6 +11,7 @@ class DesktopNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
+            NavBarLogo(),
             Text(
               'Retro Studio',
               style: TextStyle(

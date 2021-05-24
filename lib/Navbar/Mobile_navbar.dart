@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/Navbar/navbar_logo.dart';
 
 class MobileNavBar extends StatelessWidget {
   @override
@@ -9,6 +10,7 @@ class MobileNavBar extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
+            NavBarLogo(),
             Text(
               'Retro Studio',
               style: TextStyle(

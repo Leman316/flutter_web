@@ -22,12 +22,15 @@ class LandingPage extends StatelessWidget {
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 15.0, horizontal: 10),
-                child: Text(
-                  'Front page Example text',
-                  style: TextStyle(
-                      fontWeight: FontWeight.normal,
-                      color: Colors.white,
-                      fontSize: 22),
+                child: Container(
+                  width: 300,
+                  child: Text(
+                    'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?',
+                    style: TextStyle(
+                        fontWeight: FontWeight.normal,
+                        color: Colors.white,
+                        fontSize: 14),
+                  ),
                 ),
               ),
               MaterialButton(
@@ -63,7 +66,7 @@ class LandingPage extends StatelessWidget {
       builder: (context, constraints) {
         if (constraints.maxWidth > 800)
           return Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: pageChildren(constraints.biggest.width / 2),
           );
         else

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/Drawer/NavDrawer.dart';
 import 'package:flutter_web/Landing_Page/landing_page.dart';
 import 'package:flutter_web/Navbar/Desktop_navbar.dart';
 import 'Navbar/nav_bar.dart';
@@ -27,6 +28,8 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer:
+          MediaQuery.of(context).size.width < 800 ? NavigationDrawer() : null,
       body: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
